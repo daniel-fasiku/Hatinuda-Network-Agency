@@ -1,0 +1,18 @@
+:root {
+  font-family: Poppins, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: radial-gradient(circle, rgba(51, 153, 255, 1) 0%, rgba(0, 51, 153, 1) 100%);
+}
+

@@ -1,0 +1,231 @@
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    z-index: 100;
+}
+.logo-container {
+    padding-left: 50px;
+}
+.logo {
+    height: 59px;
+    cursor: pointer;
+}
+
+.link-element-container {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50.41px;
+    position: relative;
+}
+.link-element {
+    cursor: pointer;
+    font-size: 14px;
+    color: #ffffff;
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    transition: color 0.3s, border-bottom 0.3s, opacity 0.3s;
+}
+.link-element:hover {
+    color: #F8DB72;
+    border-bottom: 1px solid #F8DB72;
+}
+.link-element:active {
+    opacity: 0.7;
+}
+.contact-container {
+   margin-right: 50px;
+   flex-shrink: 0;
+}
+.contact-button {
+    color: #F8DB72;
+    font-size: 14px;
+    border: 1px solid #F8DB72;
+    background-color: #0056B301;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s, color 0.3s, opacity 0.3s;
+}
+.contact-button:hover {
+    color: #0056B3;
+    background-color: #F8DB72;
+}
+.contact-button:active {
+    opacity: 0.7;
+}
+/*styling for mobile screens only, DO NOT TOUCH*/
+.menu-link-container {
+    display: none;
+}
+.menu-links {
+    display: none;
+}
+.mobile-menu-container {
+    display: none;
+}
+.menu-button {
+    display: none;
+}
+.hide-menu {
+    display: none;
+}
+.close-menu-button {
+    display: none;
+}
+
+/*Screen styling for Big tabs, ipad pro and ipad air*/
+@media screen and (min-width: 820px) and (max-width: 1024px) {
+    .contact-container {
+        margin-right: 25px;
+    }
+    .logo-container {
+        padding-left: 25px;
+    }
+    .link-element {
+        font-size: 12px;
+    }
+    .contact-button {
+        font-size: 12px;
+    }
+    .logo {
+        height: 49px;
+    }
+    .menu-link-container {
+        display: none;
+    }
+    .menu-links {
+        display: none;
+    }
+    .mobile-menu-container {
+        display: none;
+    }
+    .menu-button {
+        display: none;
+    }
+    .hide-menu {
+        display: none;
+    }
+    .close-menu-button {
+        display: none;
+    }
+}
+
+/*Screen styling for small tabs and ipad mini*/
+@media screen and (min-width: 768px) and (max-width: 819px) {
+    .contact-container {
+        margin-right: 25px;
+    }
+    .logo-container {
+        padding-left: 25px;
+    }
+    .link-element {
+        font-size: 10px;
+    }
+    .contact-button {
+        font-size: 10px;
+    }
+    .logo {
+        height: 39px;
+    }
+    .menu-link-container {
+        display: none;
+    }
+    .menu-links {
+        display: none;
+    }
+    .mobile-menu-container {
+        display: none;
+    }
+    .menu-button {
+        display: none;
+    }
+    .hide-menu {
+        display: none;
+    }
+    .close-menu-button {
+        display: none;
+    }
+}
+
+/*Screen styling for mobile phones*/
+@media screen and (max-width: 767px) {
+    .contact-button {
+        display: none;
+    }
+    .contact-container {
+        display: none;
+    }
+    .logo {
+        height: 35px;
+    }
+    .logo-container {
+        padding-left: 25px;
+    }
+    .menu-button {
+        display: block;
+        margin-right: 30px;
+        cursor: pointer;
+    }
+    .link-element-container {
+      display: none;
+    }
+    .mobile-menu-container {
+        display: flex;
+        flex-direction: column;
+        align-items: self-end;
+        position: fixed;
+        top: 0;
+        height: 100%;
+        right: 0;
+        width: 50%;
+        background-color: #000000;
+    }
+    .menu-link-container {
+        padding-top: 54px;
+        display: flex;
+        flex-direction: column;
+        align-items:flex-end;
+        row-gap: 10px;
+    }
+    .menu-links {
+        display: block;
+        list-style: none;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #ffffff;
+        font-size: 12px;
+        margin-bottom: 20px;
+        padding-right: 10px;
+        outline: none;
+        transition: color 0.3s, opacity 0.3s;
+    }
+    .menu-links:hover {
+        color: #F8DB72;
+    }
+    .menu-links:active {
+        opacity: 0.7;
+    }
+    .close-menu-button {
+        display: block;
+        margin-top: 20px;
+        padding-right: 15px;
+        cursor: pointer;
+    }
+    .hide-menu {
+        display: none;
+    }
+}
