@@ -14,5 +14,6 @@ export const links = [
     {
         name: "Our Team",
         path: "/about"
-    }
+    },
+    
 ]

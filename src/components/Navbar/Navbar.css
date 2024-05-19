@@ -46,6 +46,7 @@
 .contact-container {
    margin-right: 50px;
    flex-shrink: 0;
+   text-decoration: none;
 }
 .contact-button {
     color: #F8DB72;

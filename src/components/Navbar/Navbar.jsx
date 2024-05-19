@@ -14,7 +14,7 @@ const Navbar = () => {
   return (
     <nav className='nav-container'>
         <Link to="/" className='logo-container'>
-            <img src={Logo} alt="company-logo" className='logo' />
+            <img src={Logo} alt="company-logo" className='logo' onClick={() => setIsNavShowing(false)} />
         </Link>
             <ul className='link-element-container'>
             {
@@ -27,9 +27,9 @@ const Navbar = () => {
               })
             }
             </ul>
-            <div className='contact-container'>
+            <Link to="/contact" className='contact-container'>
               <button className='contact-button'>Contact Us</button>
-            </div>
+            </Link>
             <div className='menu-button'>
               <AiOutlineMenu size={18} onClick={handleNavigation}/>
             </div>
@@ -40,7 +40,7 @@ const Navbar = () => {
                   links.map(({name, path}, index) => {
                     return (
                       <li key={index} className="menu-links"> 
-                        <NavLink to={path} className="menu-links">{name}</NavLink>
+                        <NavLink to={path} className="menu-links" onClick={handleNavigation}>{name}</NavLink>
                       </li>
                     )
                   })
