@@ -1,0 +1,37 @@
+.slider-wrapper {
+    background-color: #F8DB72;
+    height: 122px;
+    max-width: 100rem;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    display: flex;
+    flex-direction: column;
+}
+.slider-wrapper-text {
+    color: #0056B3;
+    font-family: "Abhaya Libre", serif;
+    font-size: 18px;
+    margin: 10px 46px;
+}
+.slider {
+    
+} 
+.image-container {
+    margin: 0px 30px;
+    display: flex;
+    align-items: center;
+    margin-right: 120px;
+}
+.image-container img {
+    height: 40.87px;
+}
+
+.image2 {
+    margin-right: 19px;
+}
+.icon-text {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    color: #0056B3;
+}

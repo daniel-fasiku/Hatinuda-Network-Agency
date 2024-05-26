@@ -8,10 +8,10 @@
     right: 0;
     height: 80px;
     z-index: 100;
+    padding-left: 90px;
+    padding-right: 90px;
 }
-.logo-container {
-    padding-left: 50px;
-}
+
 .logo {
     height: 59px;
     cursor: pointer;
@@ -23,11 +23,12 @@
     justify-content: center;
     align-items: center;
     gap: 50.41px;
+    padding: 0;
     position: relative;
 }
 .link-element {
     cursor: pointer;
-    font-size: 14px;
+    font-size: 12px;
     color: #ffffff;
     display: flex;
     text-decoration: none;
@@ -44,22 +45,21 @@
     opacity: 0.7;
 }
 .contact-container {
-   margin-right: 50px;
    flex-shrink: 0;
    text-decoration: none;
 }
 .contact-button {
     color: #F8DB72;
-    font-size: 14px;
+    font-size: 12px;
     border: 1px solid #F8DB72;
-    background-color: #0056B301;
+    background-color: transparent;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: background-color 0.3s, color 0.3s, opacity 0.3s;
+    transition: background-color 0.3s, color 0.3s, opacity 0.3s, transform 0.1s ease;
 }
 .contact-button:hover {
     color: #0056B3;
@@ -67,6 +67,7 @@
 }
 .contact-button:active {
     opacity: 0.7;
+    transform: scale(0.95);
 }
 /*styling for mobile screens only, DO NOT TOUCH*/
 .menu-link-container {
@@ -90,8 +91,9 @@
 
 /*Screen styling for Big tabs, ipad pro and ipad air*/
 @media screen and (min-width: 820px) and (max-width: 1024px) {
-    .contact-container {
-        margin-right: 25px;
+    .nav-container {
+        padding-left: 30px;
+        padding-right: 30px;
     }
     .logo-container {
         padding-left: 25px;
@@ -127,6 +129,10 @@
 
 /*Screen styling for small tabs and ipad mini*/
 @media screen and (min-width: 768px) and (max-width: 819px) {
+    .nav-container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
     .contact-container {
         margin-right: 25px;
     }
@@ -164,6 +170,10 @@
 
 /*Screen styling for mobile phones*/
 @media screen and (max-width: 767px) {
+    .nav-container {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
     .contact-button {
         display: none;
     }
