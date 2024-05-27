@@ -90,7 +90,7 @@
 }
 
 /*Screen styling for Big tabs, ipad pro and ipad air*/
-@media screen and (min-width: 820px) and (max-width: 1024px) {
+@media screen and (min-width: 821px) and (max-width: 1024px) {
     .nav-container {
         padding-left: 30px;
         padding-right: 30px;
@@ -128,42 +128,74 @@
 }
 
 /*Screen styling for small tabs and ipad mini*/
-@media screen and (min-width: 768px) and (max-width: 819px) {
+@media screen and (min-width: 768px) and (max-width: 820px) {
     .nav-container {
         padding-left: 15px;
         padding-right: 15px;
     }
+    .contact-button {
+        display: none;
+    }
     .contact-container {
-        margin-right: 25px;
+        display: none;
+    }
+    .logo {
+        height: 35px;
     }
     .logo-container {
         padding-left: 25px;
     }
-    .link-element {
-        font-size: 10px;
+    .menu-button {
+        display: block;
+        margin-right: 30px;
+        cursor: pointer;
     }
-    .contact-button {
-        font-size: 10px;
-    }
-    .logo {
-        height: 39px;
-    }
-    .menu-link-container {
-        display: none;
-    }
-    .menu-links {
-        display: none;
+    .link-element-container {
+      display: none;
     }
     .mobile-menu-container {
-        display: none;
+        display: flex;
+        flex-direction: column;
+        align-items: self-end;
+        position: fixed;
+        top: 0;
+        height: 100%;
+        right: 0;
+        width: 50%;
+        background-color: #000000;
     }
-    .menu-button {
-        display: none;
+    .menu-link-container {
+        padding-top: 54px;
+        display: flex;
+        flex-direction: column;
+        align-items:flex-end;
+        row-gap: 10px;
     }
-    .hide-menu {
-        display: none;
+    .menu-links {
+        display: block;
+        list-style: none;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #ffffff;
+        font-size: 12px;
+        margin-bottom: 20px;
+        padding-right: 10px;
+        outline: none;
+        transition: color 0.3s, opacity 0.3s;
+    }
+    .menu-links:hover {
+        color: #F8DB72;
+    }
+    .menu-links:active {
+        opacity: 0.7;
     }
     .close-menu-button {
+        display: block;
+        margin-top: 20px;
+        padding-right: 15px;
+        cursor: pointer;
+    }
+    .hide-menu {
         display: none;
     }
 }

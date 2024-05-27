@@ -98,8 +98,8 @@ const homepage = () => {
             that not only captivate audiences but also leave an indelible mark on the cultural fabric of Africa and beyond.</p>
         </div>
       </section>
-     {/* <BottomSection/>
-      <Footer/> */}
+      <BottomSection/>
+      <Footer/> 
     </div>
   )
 }

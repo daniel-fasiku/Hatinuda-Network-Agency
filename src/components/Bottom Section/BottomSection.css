@@ -4,7 +4,6 @@
     padding-right: 90px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 .section1 {
    display: flex;
@@ -90,6 +89,7 @@
     border-radius: 50px;
     background-color: #F8DB72;
     color: #0056B3;
+    flex-shrink: 0;
     transition: opacity 0.3s, transform 0.1s ease;
 }
 .section2-button:hover {
@@ -109,4 +109,197 @@
 }
 .section2-button2:hover {
     opacity: 0.7;
+}
+
+/* MEDIUM LAPTOP SCREENS DO NOT TOUCH*/
+@media screen and (min-width: 1104px) and (max-width: 1388px) {
+    .bs-container {
+        column-gap: 190px;
+    }
+    .section2 {
+        flex-shrink: 0;
+    }
+    .section2-button {
+        font-size: 12px;
+        padding: 15px 143px;
+    }
+    .section2-button2 {
+        font-size: 12px;
+        padding: 15px 133px;
+    }
+}
+
+/* SMALL LAPTOP SCREENS DO NOT TOUCH*/
+@media screen and (min-width: 1025px) and (max-width: 1103px) {
+        .bs-container {
+        column-gap: 190px;
+    }
+    .section2 {
+        flex-shrink: 0;
+    }
+    .section2-button {
+        font-size: 12px;
+        padding: 15px 143px;
+    }
+    .section2-button2 {
+        font-size: 12px;
+        padding: 15px 133px;
+    }
+}
+
+/*BIG TABS AND IPAD PRO*/
+@media screen and (min-width: 933px) and (max-width: 1024px) {
+    .bs-container {
+        column-gap: 190px;
+    }
+    .section2 {
+        flex-shrink: 0;
+    }
+    .section2-button {
+        font-size: 12px;
+        padding: 15px 103px;
+        flex-shrink: 0;
+    }
+    .section2-button2 {
+        font-size: 12px;
+        padding: 15px 90px;
+        flex-shrink: 0;
+    }
+}
+
+/*IPAD AIR, IPAD MINI AND SMALL TABS*/
+@media screen and (min-width: 768px) and (max-width: 932px) {
+    .bs-container {
+        display: grid;
+        padding-left: 180px;
+        padding-right: 180px;
+        row-gap: 90px;
+    }
+    .content2 {
+        padding-left: 180px;
+        padding-right: 180px;
+    }
+    .section2 {
+        flex-shrink: 0;
+    }
+    .section2-button {
+        font-size: 14px;
+        padding: 15px 153px;
+       white-space: nowrap;
+    }
+    .section2-button2 {
+        font-size: 14px;
+        padding: 15px 139px;
+        white-space: nowrap;
+    }
+}
+
+/*MOBILE PHONES*/
+@media screen and (min-width: 376px) and (max-width: 767px) {
+    .bs-container {
+        display: grid;
+        padding-left: 50px;
+        padding-right: 50px;
+        row-gap: 90px;
+ 
+    }
+    .content2 {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .section2 {
+        flex-shrink: 0;
+    }
+    .section2-button {
+        font-size: 14px;
+        padding: 15px 93px;
+       white-space: nowrap;
+    }
+    .section2-button2 {
+        font-size: 14px;
+        padding: 15px 80px;
+        white-space: nowrap;
+    }
+}
+
+/*SAMSUNG GALAXY TAB S4*/
+@media screen and (width: 712px) {
+    .bs-container {
+        display: grid;
+        padding-left: 90px;
+        padding-right: 150px;
+        row-gap: 90px;
+ 
+    }
+    .content2 {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .section2 {
+        flex-shrink: 0;
+    }
+    .section2-button {
+        font-size: 14px;
+        padding: 15px 203px;
+       white-space: nowrap;
+    }
+    .section2-button2 {
+        font-size: 14px;
+        padding: 15px 190px;
+        white-space: nowrap;
+    }
+}
+
+/*IPHONE X AND 5 AND SE */
+@media screen and (min-width: 350px) and (max-width: 375px) {
+    .bs-container {
+        display: grid;
+        padding-left: 30px;
+        padding-right: 30px;
+        row-gap: 90px;
+    }
+    .content2 {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .section2 {
+        flex-shrink: 0;
+    }
+    .section2-button {
+        font-size: 12px;
+        padding: 15px 103px;
+       white-space: nowrap;
+    }
+    .section2-button2 {
+        font-size: 12px;
+        padding: 15px 90px;
+        white-space: nowrap;
+    }
+}
+
+/*IPHONE 4 AND LESS */
+@media screen and (max-width:349px) {
+    .bs-container {
+        display: grid;
+        padding-left: 30px;
+        padding-right: 30px;
+        row-gap: 90px;
+    }
+    .content2 {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .section2 {
+        flex-shrink: 0;
+    }
+    .section2-button {
+        font-size: 12px;
+        padding: 15px 73px;
+       white-space: nowrap;
+    }
+    .section2-button2 {
+        font-size: 12px;
+        padding: 15px 60px;
+        white-space: nowrap;
+    }
 }

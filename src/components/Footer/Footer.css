@@ -1,6 +1,6 @@
 .footer-container {
     background-color: #08103510;
-    height: 252px;
+    height: 352px;
     margin-top: 200px;
     position: relative;
 }
@@ -18,8 +18,7 @@
    justify-content: space-between;
    align-items: center;
 }
-.footer-section1 {
-}
+
 .logo-cont {
     display: flex;
     align-items: center;
@@ -76,4 +75,107 @@
 .link-style {
     text-decoration: none;
     color: #ffffff;
+}
+
+
+/*MOBILE PHONES*/
+@media screen and (min-width: 376px) and (max-width: 767px) {
+    .content-container {
+        padding-left: 30px;
+        padding-right: 50px;
+    }
+    .footer-top-section {
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+    }
+    .footer-section2 {
+        column-gap: 170px;
+        width: 100%;
+    }
+    .t1 {
+        white-space: nowrap;
+    }
+    .t2 {
+        white-space: nowrap;
+    }
+}
+
+/*SAMSUNG GALAXY TAB S4*/
+@media screen and (width: 712px) {
+    .content-container {
+        padding-left: 120px;
+        padding-right: 150px;
+    }
+    .footer-top-section {
+        display: grid;
+        place-items: center;
+        row-gap: 30px;
+    }
+    .footer-bottom-section {
+        padding-left: 70px;
+    }
+    .footer-section2 {
+        column-gap: 50px;
+        width: 500px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .t1 {
+        white-space: nowrap;
+    }
+    .t2 {
+        white-space: nowrap;
+    }
+}
+
+/*IPHONE X AND 5 AND SE */
+@media screen and (min-width: 350px) and (max-width: 375px) {
+    .content-container {
+        padding-left: 30px;
+        padding-right: 50px;
+    }
+    .footer-top-section {
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+    }
+    .footer-section2 {
+        column-gap: 150px;
+        width: 100%;
+    }
+    .t1 {
+        white-space: nowrap;
+    }
+    .t2 {
+        white-space: nowrap;
+    }
+}
+
+/*IPHONE 4 AND LESS */
+@media screen and (max-width:349px) {
+    .content-container {
+        padding-left: 20px;
+        padding-right: 50px;
+    }
+    .footer-top-section {
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+    }
+    .footer-section2 {
+        column-gap: 150px;
+        width: 100%;
+    }
+    .t1 {
+        white-space: nowrap;
+        font-size: 11px;
+    }
+    .t2 {
+        white-space: nowrap;
+        font-size: 11px;
+    }
+    .copyright-text {
+        font-size: 12px;
+    }
 }

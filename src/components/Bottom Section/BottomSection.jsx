@@ -4,7 +4,7 @@ import "./BottomSection.css";
 
 const BottomSection = () => {
     return (
-        <section >
+        <section>
             <div className='bs-container'>
                 <div className="section1">
                     <div className="content1">

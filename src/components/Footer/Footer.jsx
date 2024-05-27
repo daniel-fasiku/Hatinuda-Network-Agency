@@ -12,9 +12,7 @@ const Footer = () => {
             <div className="logo-cont">
               <Link to="/">
               <img src={Logo} alt="logo" className="footer-logo" />
-              </Link>
-              
-              <p className="logo-text">hatinuda is a creative agency to provides the best specializes  digital creative solution in Nigeria to helps brands achieve their full potential.</p>
+              </Link>              
             </div>
           </div>
           <div className="footer-section2">

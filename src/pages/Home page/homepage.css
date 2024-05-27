@@ -24,6 +24,7 @@
 .left-text1 {
     font-size: 36px;
     color: #F8DB72;
+    max-width: 480px;
 }
 .left-text-span {
     color: #ffffff;
@@ -542,6 +543,13 @@
         max-width: 455px;
         color: #ffffff99;
     }
+    .body3 {
+        margin-top: 311px;
+        padding-left: 50px;
+        padding-right: 50px;
+        display: grid;
+        row-gap: 20px;
+    }
 }
 /*SAMSUNG GALAXY TAB S4*/
 @media screen and (width: 712px) {
@@ -606,8 +614,16 @@
         max-width: 455px;
         color: #ffffff99;
     }
+    .body3 {
+        margin-top: 311px;
+        padding-left: 90px;
+        padding-right: 150px;
+        display: grid;
+        row-gap: 20px;
+    }
 }
-/*IPHONE 5 AND SE */
+
+/*IPHONE X AND 5 AND SE */
 @media screen and (min-width: 350px) and (max-width: 375px) {
     .body1 {
         display: grid;
@@ -677,6 +693,13 @@
         margin-top: 58px;
         max-width: 455px;
         color: #ffffff99;
+    }
+    .body3 {
+        margin-top: 311px;
+        padding-left: 50px;
+        padding-right: 50px;
+        display: grid;
+        row-gap: 20px;
     }
 }
 /*IPHONE 4 AND LESS */
@@ -749,5 +772,12 @@
         margin-top: 58px;
         max-width: 455px;
         color: #ffffff99;
+    }
+    .body3 {
+        margin-top: 311px;
+        padding-left: 30px;
+        padding-right: 30px;
+        display: grid;
+        row-gap: 20px;
     }
 }
