@@ -1,6 +1,6 @@
 .footer-container {
     background-color: #08103510;
-    height: 352px;
+    height: 252px;
     margin-top: 200px;
     position: relative;
 }
@@ -80,6 +80,9 @@
 
 /*MOBILE PHONES*/
 @media screen and (min-width: 376px) and (max-width: 767px) {
+    .footer-container {
+        height: 352px;
+    }
     .content-container {
         padding-left: 30px;
         padding-right: 50px;
@@ -131,6 +134,9 @@
 
 /*IPHONE X AND 5 AND SE */
 @media screen and (min-width: 350px) and (max-width: 375px) {
+    .footer-container {
+        height: 352px;
+    }
     .content-container {
         padding-left: 30px;
         padding-right: 50px;
@@ -154,6 +160,9 @@
 
 /*IPHONE 4 AND LESS */
 @media screen and (max-width:349px) {
+    .footer-container {
+        height: 352px;
+    }
     .content-container {
         padding-left: 20px;
         padding-right: 50px;

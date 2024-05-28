@@ -4,6 +4,7 @@
     padding-right: 90px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .section1 {
    display: flex;
