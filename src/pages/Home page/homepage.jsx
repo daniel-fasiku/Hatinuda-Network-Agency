@@ -99,7 +99,6 @@ const homepage = () => {
         </div>
       </section>
       <BottomSection/>
-      <Footer/> 
     </div>
   )
 }

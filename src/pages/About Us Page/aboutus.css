@@ -381,6 +381,10 @@
 
 /*SAMSUNG GALAXY TAB S4*/
 @media screen and (width: 712px) {
+    .about-section1 {
+        padding-left: 100px;
+        padding-right: 50px;
+    }
     .about-section2 {
         margin-top: 318px;
         padding-left: 90px;
@@ -400,6 +404,10 @@
     }
     .team-info {
         max-width: 60rem;
+    }
+    .about-section3 {
+        padding-left: 90px;
+        padding-right: 50px;
     }
     .ab-section3-image {
         height: 205px;

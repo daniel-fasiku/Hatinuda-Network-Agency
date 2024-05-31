@@ -70,7 +70,6 @@ const aboutus = () => {
         </div>
       </section>
       <BottomSection />
-      <Footer />
     </div>
   )
 }

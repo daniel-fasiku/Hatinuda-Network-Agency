@@ -5,6 +5,7 @@ import ServicesPage from "./pages/Services Page/Services";
 import ContactUsPage from "./pages/Contact Us Page/ContactUs";
 import NotFoundPage from "./pages/Not Found/notfound";
 import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer";
 
 
 const App = () => {
@@ -18,6 +19,7 @@ const App = () => {
         <Route path="contact" element={<ContactUsPage/>}/>
         <Route path="*" element={<NotFoundPage/>}/>
       </Routes>
+      <Footer/>
     </BrowserRouter>
   )
 }
