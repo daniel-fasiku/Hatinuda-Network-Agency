@@ -125,6 +125,7 @@
     font-size: 13px;
     font-weight: 500;
     margin-bottom: 8px;
+    display: block;
 }
 .cu-section3-input1 {
     background-color: #fff;
@@ -179,6 +180,23 @@
 }
 .cu-section3-send-button:active {
     transform: scale(0.75);
+}
+.send {
+    align-self: flex-end;
+    margin-top: 20px;
+    font-size: 12px;
+}
+.toast-success {
+    font-size: 13px;
+    color: #0056B3;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+.toast-fail {
+    font-size: 13px;
+    color: red;
+    background-color: #ffffff;
+    border-radius: 5px;
 }
 
 /* MEDIUM LAPTOP SCREENS DO NOT TOUCH*/

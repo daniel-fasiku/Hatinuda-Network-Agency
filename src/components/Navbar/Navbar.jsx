@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import {useState, useEffect} from 'react'
 import Logo from "../../assets/HATINUDA NETWORK 1.svg";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { Link, NavLink } from "react-router-dom";
@@ -7,12 +7,20 @@ import "./Navbar.css";
 
 const Navbar = () => {
   const [isNavShowing, setIsNavShowing] = useState(false);
+  const [isNavScrolling, setIsNavScrolling] = useState(false);
   const handleNavigation = () => {
-    setIsNavShowing(!isNavShowing);
+    setIsNavShowing(true);
   };
 
+  useEffect(() => {
+    window.addEventListener('scroll', ()=> {
+      window.scrollY > 50 ? setIsNavScrolling(true) : setIsNavScrolling(false)
+    })
+  }, []);
+  
+
   return (
-    <nav className='nav-container'>
+    <nav className={`nav-container ${isNavScrolling ? "dark-nav-cont" : ""}`} >
         <Link to="/" className='logo-container'>
             <img src={Logo} alt="company-logo" className='logo' onClick={() => setIsNavShowing(false)} />
         </Link>
@@ -34,13 +42,13 @@ const Navbar = () => {
               <AiOutlineMenu size={18} onClick={handleNavigation}/>
             </div>
             <div className={`${isNavShowing ? "mobile-menu-container" : "hide-menu"}`}>
-            <AiOutlineClose size={22} onClick={handleNavigation} className='close-menu-button'/>
+            <AiOutlineClose size={22} onClick={()=> setIsNavShowing(false)} className='close-menu-button'/>
               <ul className='menu-link-container'>
                 {
                   links.map(({name, path}, index) => {
                     return (
                       <li key={index} className="menu-links"> 
-                        <NavLink to={path} className="menu-links" onClick={handleNavigation}>{name}</NavLink>
+                        <NavLink to={path} className="menu-links" onClick={()=> setIsNavShowing(false)}>{name}</NavLink>
                       </li>
                     )
                   })

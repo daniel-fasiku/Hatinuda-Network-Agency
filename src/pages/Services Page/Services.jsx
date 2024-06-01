@@ -9,13 +9,20 @@ import { services4 } from "../../data.js";
 import { services5 } from "../../data.js";
 import { services6 } from "../../data.js";
 import { works } from "../../data.js";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../variant";
 
 import "./Services.css";
 
 const Services = () => {
   return (
     <div className="services-container">
-      <section className="sv-section1-cont">
+      <motion.section
+        variants={fadeIn("down", 0.2)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.7 }}
+        className="sv-section1-cont">
         <div className="sv-section1">
           <div className="sv-section1-content1">
             <div className="sv-section1-content1-img-cont">
@@ -54,18 +61,28 @@ const Services = () => {
             </div>
           </div>
         </div>
-      </section>
-     <section className="sv-section2">
+      </motion.section>
+      <section className="sv-section2">
         <div className="sv-section2-item1">
           {
             services.map(({ imagePath, title, title2, info, id }) => {
               return (
                 <div className="sv-section2-content1" key={id}>
-                  <img src={imagePath} alt="services-pic" className="sv-section2-img" />
-                  <div className="sv-section2-text-cont">
+                  <motion.img
+                    variants={fadeIn("right", 0.2)}
+                    initial="hidden"
+                    whileInView={"show"}
+                    viewport={{ once: false, amount: 0.7 }}
+                    src={imagePath} alt="services-pic" className="sv-section2-img" />
+                  <motion.div
+                    variants={fadeIn("left", 0.2)}
+                    initial="hidden"
+                    whileInView={"show"}
+                    viewport={{ once: false, amount: 0.7 }}
+                    className="sv-section2-text-cont">
                     <h3 className="sv-section2-text1">{title} <span className="sv-section2-span">{title2}</span></h3>
                     <p className="sv-section2-text2">{info}</p>
-                  </div>
+                  </motion.div>
                 </div>
               )
             })
@@ -76,11 +93,21 @@ const Services = () => {
             services2.map(({ imagePath, title, title2, info, id }) => {
               return (
                 <div className="sv-section2-content1" key={id}>
-                  <div className="sv-section2-text-cont">
+                  <motion.div
+                    variants={fadeIn("left", 0.2)}
+                    initial="hidden"
+                    whileInView={"show"}
+                    viewport={{ once: false, amount: 0.7 }}
+                    className="sv-section2-text-cont">
                     <h3 className="sv-section2-text1">{title} <span className="sv-section2-span">{title2}</span></h3>
                     <p className="sv-section2-text2">{info}</p>
-                  </div>
-                  <img src={imagePath} alt="services-pic" className="sv-section2-img" />
+                  </motion.div>
+                  <motion.img
+                    variants={fadeIn("right", 0.2)}
+                    initial="hidden"
+                    whileInView={"show"}
+                    viewport={{ once: false, amount: 0.7 }}
+                    src={imagePath} alt="services-pic" className="sv-section2-img" />
                 </div>
               )
             })
@@ -93,11 +120,21 @@ const Services = () => {
             services3.map(({ imagePath, title, title2, info, id }) => {
               return (
                 <div className="sv-section2-content1" key={id}>
-                  <img src={imagePath} alt="services-pic" className="sv-section3-img2" />
-                  <div className="sv-section2-text-cont">
+                  <motion.img
+                    variants={fadeIn("right", 0.2)}
+                    initial="hidden"
+                    whileInView={"show"}
+                    viewport={{ once: false, amount: 0.7 }}
+                    src={imagePath} alt="services-pic" className="sv-section3-img2" />
+                  <motion.div
+                    variants={fadeIn("left", 0.2)}
+                    initial="hidden"
+                    whileInView={"show"}
+                    viewport={{ once: false, amount: 0.7 }}
+                    className="sv-section2-text-cont">
                     <h3 className="sv-section2-text1">{title} <span className="sv-section2-span">{title2}</span></h3>
                     <p className="sv-section2-text2">{info}</p>
-                  </div>
+                  </motion.div>
                 </div>
               )
             })
@@ -108,11 +145,21 @@ const Services = () => {
             services4.map(({ imagePath, title, title2, info, id }) => {
               return (
                 <div className="sv-section2-content1" key={id}>
-                  <div className="sv-section2-text-cont">
+                  <motion.div
+                    variants={fadeIn("left", 0.2)}
+                    initial="hidden"
+                    whileInView={"show"}
+                    viewport={{ once: false, amount: 0.7 }}
+                    className="sv-section2-text-cont">
                     <h3 className="sv-section2-text1">{title} <span className="sv-section2-span">{title2}</span></h3>
                     <p className="sv-section2-text2">{info}</p>
-                  </div>
-                  <img src={imagePath} alt="services-pic" className="sv-section3-img2" />
+                  </motion.div>
+                  <motion.img
+                    variants={fadeIn("right", 0.2)}
+                    initial="hidden"
+                    whileInView={"show"}
+                    viewport={{ once: false, amount: 0.7 }}
+                    src={imagePath} alt="services-pic" className="sv-section3-img2" />
                 </div>
               )
             })
@@ -124,13 +171,18 @@ const Services = () => {
           {
             services5.map(({ imagePath, title, title2, info, id }) => {
               return (
-                <div className="sv-section2-content1" key={id}>
+                <motion.div
+                  variants={fadeIn("down", 0.2)}
+                  initial="hidden"
+                  whileInView={"show"}
+                  viewport={{ once: false, amount: 0.7 }}
+                  className="sv-section2-content1" key={id}>
                   <img src={imagePath} alt="services-pic" className="sv-section2-img" />
                   <div className="sv-section2-text-cont">
                     <h3 className="sv-section2-text1">{title} <span className="sv-section2-span">{title2}</span></h3>
                     <p className="sv-section2-text2">{info}</p>
                   </div>
-                </div>
+                </motion.div>
               )
             })
           }
@@ -139,13 +191,18 @@ const Services = () => {
           {
             services6.map(({ imagePath, title, title2, info, id }) => {
               return (
-                <div className="sv-section2-content1" key={id}>
+                <motion.div
+                  variants={fadeIn("up", 0.2)}
+                  initial="hidden"
+                  whileInView={"show"}
+                  viewport={{ once: false, amount: 0.7 }}
+                  className="sv-section2-content1" key={id}>
                   <div className="sv-section2-text-cont">
                     <h3 className="sv-section2-text1">{title} <span className="sv-section2-span">{title2}</span></h3>
                     <p className="sv-section2-text2">{info}</p>
                   </div>
                   <img src={imagePath} alt="services-pic" className="sv-section2-img" />
-                </div>
+                </motion.div>
               )
             })
           }
@@ -153,7 +210,12 @@ const Services = () => {
       </section>
       <section className="sv-section5">
         <h1 className="sv-section5-text1">Some Of  <span className="sv-section5-span"> Our Works</span></h1>
-        <div className="sv-section5-item2-cont">
+        <motion.div
+          variants={fadeIn("down", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.7 }}
+          className="sv-section5-item2-cont">
           {
             works.map(({ imagePath, info, index }) => {
               return (
@@ -164,8 +226,8 @@ const Services = () => {
               )
             })
           }
-        </div>
-      </section> 
+        </motion.div>
+      </section>
     </div>
   )
 }

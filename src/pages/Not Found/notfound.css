@@ -1,0 +1,25 @@
+.not-found-container {
+    height: 50vh;
+    display: grid;
+    place-items: center;
+}
+.not-found-text {
+    font-size: 30px;
+}
+.not-found-button {
+    color: #0056B3;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F8DB72;
+    padding: 15px 40px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+.not-found-button:hover {
+    transform: scale(0.95);
+}
+.not-found-button:active {
+    transform: scale(0.75);
+}
