@@ -53,7 +53,7 @@ const Navbar = () => {
                     )
                   })
                 }
-                <Link to="/contact" className="menu-links" onClick={()=> setIsNavShowing(false)}>Contact Us</Link>
+                <Link to="/contact" className="menu-link" onClick={()=> setIsNavShowing(false)}>Contact Us</Link>
               </ul>
             </div>
     </nav>

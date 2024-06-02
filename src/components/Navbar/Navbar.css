@@ -270,6 +270,18 @@
         outline: none;
         transition: color 0.3s, opacity 0.3s;
     }
+    .menu-link {
+        display: block;
+        list-style: none;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #ffffff;
+        font-size: 12px;
+        margin-bottom: 20px;
+        padding-right: 20px;
+        outline: none;
+        transition: color 0.3s, opacity 0.3s;
+    }
     .menu-links:hover {
         color: #F8DB72;
     }

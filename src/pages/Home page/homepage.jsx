@@ -39,11 +39,7 @@ const homepage = () => {
             <GoArrowUpRight size={20} color="#F8DB72" className="learn-more-arrow" />
           </Link>
         </motion.div>
-        <motion.div 
-          variants={fadeIn("left", 0.2)}
-          initial="hidden"
-          whileInView={"show"}
-          viewport={{once: false, amount: 0.7}}
+        <div 
           className="second-section">
           <div className="second-section-element">
             <div className="second-section-icon-container">
@@ -69,7 +65,7 @@ const homepage = () => {
             </div>
             <p className="second-section-text">Social Analytics</p>
           </div>
-        </motion.div>
+        </div>
       </section>
       <motion.section className="body2">
         <motion.div
@@ -85,14 +81,10 @@ const homepage = () => {
           </Link>
           <p className="body2-section2-text2">Our vision is to create a unique value for our clients that will differentiate them from their competitors. Our mission at Hatinuda Network is to use technology, innovation, and creativity to influence and transform cultures all around the world.</p>
         </motion.div>
-        <motion.div 
-          variants={fadeIn("right", 0.2)}
-          initial="hidden"
-          whileInView={"show"}
-          viewport={{once: false, amount: 0.7}}
+        <div 
           className="body2-section1">
           <img src={vision} alt="vision" className="body2-icon" />
-        </motion.div>
+        </div>
       </motion.section>
        <section className="body3">
         <motion.div 

@@ -93,7 +93,7 @@ const ContactUs = () => {
       <section className="cu-section3">
         <h3 className="cu-section3-text1">Talk to Us</h3>
         <p className="cu-section3-text2">Send us a message today for consultations and bookings</p>
-        <motion.form className="cu-section3-item2" ref={form} onSubmit={sendEmail}>
+        <form className="cu-section3-item2" ref={form} onSubmit={sendEmail}>
           <div className="cu-section3-input-section1">
             <div className="cu-section3-input1-cont">
               <label className="cu-section3-input-text">First Name</label>
@@ -113,7 +113,7 @@ const ContactUs = () => {
             <textarea name="message" placeholder="Write a message to us...." className="cu-section3-input3" />
           </div>
           <button type="submit" value="Send" className="cu-section3-send-button">Send</button>
-        </motion.form>
+        </form>
         <ToastContainer />
       </section>
     </div>
