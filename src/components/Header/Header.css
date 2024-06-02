@@ -211,17 +211,16 @@
     }
     .left-button1 {
         padding: 13px 38px;
-        font-size: 10px;
+        font-size: 12px;
         border-radius: 4.54px;
+        white-space: nowrap;
     }
     .left-button2 {
         padding: 13px 38px;
-        font-size: 10px;
+        font-size: 12px;
         border-radius: 4.54px;
     }
-    .left-bottom-section-button-container {
-        max-width: 260px;
-    }
+
 }
 
 /*IPAD AIR, IPAD MINI AND SMALL TABS*/
@@ -245,7 +244,7 @@
         height: 30.09px;
     }
     .left-bottom-section-text1 {
-        font-size: 10px;
+        font-size: 12px;
     }
     .left-bottom-section {
         margin-top: 90px;
@@ -263,16 +262,17 @@
     }
     .left-button1 {
         padding: 13px 38px;
-        font-size: 10px;
+        font-size: 12px;
         border-radius: 4.54px;
     }
     .left-button2 {
         padding: 13px 38px;
-        font-size: 10px;
+        font-size: 12px;
         border-radius: 4.54px;
+        white-space: nowrap;
     }
     .left-bottom-section-button-container {
-        max-width: 260px;
+        max-width: 290px;
     }
 }
 
@@ -319,11 +319,13 @@
         padding: 13px 38px;
         font-size: 13px;
         border-radius: 4.54px;
+        white-space: nowrap;
     }
     .left-button2 {
         padding: 12px 38px;
         font-size: 13px;
         border-radius: 4.54px;
+        white-space: nowrap;
     }
 }
 
@@ -352,14 +354,15 @@
         height: 16.09px;
     }
     .left-bottom-section-text1 {
-        font-size: 10px;
+        font-size: 12px;
     }
     .left-bottom-section {
         margin-top: 90px;
     }
     .left-bottom-section-button-container {
         margin-top: 36px;
-        max-width: 240px;
+        gap: 10px;
+        
     }
     .hero-pic {
         max-width: 250px;
@@ -372,10 +375,14 @@
         padding: 13px 38px;
         font-size: 8.5px;
         border-radius: 4.54px;
+        font-size: 11px;
+        white-space: nowrap;
     }
     .left-button2 {
         padding: 12px 38px;
         font-size: 8.5px;
         border-radius: 4.54px;
+        font-size: 11px;
+        white-space: nowrap;
     }
 }

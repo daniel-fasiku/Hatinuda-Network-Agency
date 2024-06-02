@@ -12,7 +12,6 @@ import { GoArrowUpRight } from "react-icons/go";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variant";
-import Footer from "../../components/Footer/Footer";
 import BottomSection from "../../components/Bottom Section/BottomSection";
 
 const homepage = () => {

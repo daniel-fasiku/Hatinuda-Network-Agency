@@ -243,7 +243,8 @@
         align-items: self-end;
         position: fixed;
         top: 0;
-        height: 100vh;
+        bottom: 0;
+        height: 900vh;
         right: 0;
         width: 50%;
         background-color: #000000;

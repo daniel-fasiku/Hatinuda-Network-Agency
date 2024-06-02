@@ -30,14 +30,9 @@ const Header = () => {
           </div>
         </div>
       </motion.div>
-      <motion.div
-        variants={fadeIn("down", 0.2)}
-        initial="hidden"
-        whileInView={"show"}
-        viewport={{ once: false, amount: 0.7 }}
-        className='right-section'>
+      <div className='right-section'>
         <img src={HeroPic} alt="hero-pic2" className='hero-pic' />
-      </motion.div>
+      </div>
     </header>
   )
 }

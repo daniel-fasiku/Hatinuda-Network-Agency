@@ -43,7 +43,7 @@ const aboutus = () => {
           <img src={Aboutpic4} alt="img4" className="sec1-right-img" />
         </motion.div>
       </section>
-      <section className="about-section2">
+      <section className="about-section2" id="team">
         <motion.h1 
           variants={fadeIn("right", 0.2)}
           initial="hidden"
