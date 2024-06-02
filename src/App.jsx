@@ -1,4 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/react"
 import Homepage from "./pages/Home page/homepage";
 import AboutUsPage from "./pages/About Us Page/aboutus";
 import ServicesPage from "./pages/Services Page/Services";
@@ -20,6 +22,8 @@ const App = () => {
         <Route path="*" element={<NotFoundPage/>}/>
       </Routes>
       <Footer/>
+      <Analytics/>
+      <SpeedInsights/>
     </BrowserRouter>
   )
 }
