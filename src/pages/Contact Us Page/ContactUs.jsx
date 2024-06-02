@@ -67,10 +67,10 @@ const ContactUs = () => {
         <div className="cu-section2-item1">
           <p className="cu-section2-item1-text">Follow us</p>
           <div className="cu-section2-item1-icons">
-            <a href="https://www.instagram.com/hatinuda/" rel="noreferrer noopener" className="icon-cont">
+            <a href="https://www.instagram.com/hatinuda/" className="icon-cont">
               <Icon icon="uil:instagram" height={15} color="black" className="icon" />
             </a>
-            <a href="https://www.linkedin.com/company/hatinuda-networkk" rel="noreferrer noopener" className="icon-cont">
+            <a href="https://www.linkedin.com/company/hatinuda-networkk" className="icon-cont">
               <Icon icon="ri:linkedin-fill" height={15} color="black" className="icon" />
             </a>
           </div>

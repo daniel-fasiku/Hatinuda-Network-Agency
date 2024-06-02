@@ -50,12 +50,7 @@ const aboutus = () => {
           whileInView={"show"}
           viewport={{once: false, amount: 0.7}}
           className="about-section2-text1">we work with only the <span className="about-section2-span">best team</span> & <span className="about-section2-span">leads</span></motion.h1>
-        <motion.div
-          variants={fadeIn("down", 0.2)}
-          initial="hidden"
-          whileInView={"show"}
-          viewport={{once: false, amount: 0.7}}
-          className="team">
+        <div className="team">
           {
             team.map(({ imagePath, name, title, index }) => {
               return (
@@ -67,7 +62,7 @@ const aboutus = () => {
               )
             })
           }
-        </motion.div>
+        </div>
         <div className="team-info">
           <p className="team-info-text">At Hatinuda Network, we have assembled a team of remarkably talented individuals who possess an unwavering passion for their craft. The Team shares a common purpose to create awe-inspiring experiences that resonate deeply with audiences and leave a lasting impression.</p>
         </div>

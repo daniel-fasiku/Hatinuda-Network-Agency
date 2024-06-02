@@ -23,9 +23,9 @@ const Footer = () => {
             </article>
             <article>
               <Link to="/contact" className='link-style'><p className="t1">Contact Us</p></Link>
-              <a className="t2"href="mailto:hatinudanetwork@gmail.com" rel='noreferrer noopener'><p >Gmail</p></a>
-              <a className="t2"href="https://www.instagram.com/hatinuda/" target='_blank' rel='noreferrer noopener'><p >Instagram</p></a>
-              <a className="t2"href="tel:+23481455771499" rel="noreferrer noopener"><p>Call</p></a>
+              <a className="t2"href="mailto:hatinudanetwork@gmail.com"><p >Gmail</p></a>
+              <a className="t2"href="https://www.instagram.com/hatinuda/" target='_blank'><p >Instagram</p></a>
+              <a className="t2"href="tel:+23481455771499"><p>Call</p></a>
             </article>
           </div>
         </article>
