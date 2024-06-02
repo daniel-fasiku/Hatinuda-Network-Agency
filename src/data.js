@@ -34,22 +34,22 @@ export const links = [
 
 export const team = [
     {
-        imagePath: "/src/assets/team-img1.svg",
+        imagePath: Team1,
         name: "Cornelius Adetutu",
         title: "Cco"
     },
     {
-        imagePath: "/src/assets/team-img2.svg",
+        imagePath: Team2,
         name: "Adewale Inioluwa",
         title: "Copywriting/Project Manager"
     },
     {
-        imagePath: "/src/assets/team-img3.svg",
+        imagePath: Team3,
         name: "Jegede Toye",
         title: "Chief Designer"
     },
     {
-        imagePath: "/src/assets/team-img4.svg",
+        imagePath: Team4,
         name: "Favour Okunola",
         title: "Content Writer"
     },
