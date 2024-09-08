@@ -35,7 +35,7 @@ export const links = [
 export const team = [
     {
         imagePath: Team1,
-        name: "Cornelius Adetutu",
+        name: "Cornelius ",
         title: "Cco"
     },
     {
